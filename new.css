@@ -1,0 +1,59 @@
+/* Basic styling */
+body {
+    background-color: #000;
+}
+
+#console {
+    font-family: courier, monospace;
+    color: #fff;
+    width: 1050px;
+    margin-left: 20%;
+    margin-right: 50%;
+    margin-top: 60px;
+    font-size: 14px;
+    white-space: pre-wrap;
+}
+
+.line {
+    visibility: hidden;
+}
+
+/* Command text style */
+.command {
+    color: #33cc33;
+    font-weight: bold;
+}
+
+/* Bold text */
+.bold {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Link styling */
+.pointer {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.pointer:hover {
+    text-decoration: underline;
+}
+
+
+.blinker {
+    animation: blink 2s step-start infinite; /* Makes the text blink */
+}
+
+
+@keyframes blink {
+    0% {
+        visibility: visible;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
